@@ -15,12 +15,27 @@
         <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
 
-        <!-- Google Tag (Moved properly inside head) -->
-        <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-K6SH5P2F"></script>
+        <!-- Google Tag & Ads Conversion Tracking -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18589493198"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
+          gtag('config', 'AW-18589493198');
+          gtag('config', 'GTM-K6SH5P2F');
+
+          function gtag_report_conversion(url) {
+            var callback = function () {
+              if (typeof(url) != 'undefined') {
+                window.open(url, '_blank', 'noopener');
+              }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-18589493198/SvoXCIre0L0GEM7PlKBF',
+                'event_callback': callback
+            });
+            return false;
+          }
         </script>
 
         <style>
@@ -68,7 +83,7 @@
                     <span>Memories forever.</span>
                 </h1>
                 <p class="lead">Cinematic Wedding, Pre-Wedding &amp; Event Photography in 4K HD.</p>
-                <a class="btn" id="heroWaBtn" href="https://wa.me/917024883003?text=Hi%20Alex%20Studio!%20I%20want%20to%20book%20a%20shoot%20(10%25%20off%20first%20booking)." target="_blank" rel="noopener">
+                <a class="btn" id="heroWaBtn" href="https://wa.me/917024883003?text=Hi%20Alex%20Studio!%20I%20want%20to%20book%20a%20shoot%20(10%25%20off%20first%20booking)." onclick="return gtag_report_conversion('https://wa.me/917024883003?text=Hi%20Alex%20Studio!%20I%20want%20to%20book%20a%20shoot%20(10%25%20off%20first%20booking).');" target="_blank" rel="noopener">
                     <svg class="wi" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="currentColor">
                         <use href="#wa"/>
                     </svg>
@@ -155,11 +170,11 @@
                         <span>Small corporate celebrations, launches and team days.</span>
                     </li>
                 </ul>
-                <a class="btn rv" href="https://wa.me/917024883003?text=Hi%20Alex%20Studio!%20I%20want%20to%20book%20a%20shoot%20(10%25%20off%20first%20booking)." target="_blank" rel="noopener">
+                <a class="btn rv" href="https://wa.me/917024883003?text=Hi%20Alex%20Studio!%20I%20want%20to%20book%20a%20shoot%20(10%25%20off%20first%20booking)." onclick="return gtag_report_conversion('https://wa.me/917024883003?text=Hi%20Alex%20Studio!%20I%20want%20to%20book%20a%20shoot%20(10%25%20off%20first%20booking).');" target="_blank" rel="noopener">
                     <svg class="wi" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="currentColor">
                         <use href="#wa"/>
                     </svg>
-                    <span>Book on WhatsApp</span>
+                    <span>Book Now on WhatsApp • 10% Off</span>
                 </a>
             </section>
             <section class="gal k">
@@ -177,11 +192,11 @@
                     <img src="img/k3.jpg" alt="The couple holding hands beside the sacred fire" width="900" height="1125" loading="lazy" decoding="async">
                     <figcaption>The pheras</figcaption>
                 </figure>
-                <a class="btn rv" href="https://wa.me/917024883003?text=Hi%20Alex%20Studio!%20I%20want%20to%20book%20a%20shoot%20(10%25%20off%20first%20booking)." target="_blank" rel="noopener">
+                <a class="btn rv" href="https://wa.me/917024883003?text=Hi%20Alex%20Studio!%20I%20want%20to%20book%20a%20shoot%20(10%25%20off%20first%20booking)." onclick="return gtag_report_conversion('https://wa.me/917024883003?text=Hi%20Alex%20Studio!%20I%20want%20to%20book%20a%20shoot%20(10%25%20off%20first%20booking).');" target="_blank" rel="noopener">
                     <svg class="wi" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="currentColor">
                         <use href="#wa"/>
                     </svg>
-                    <span>Book on WhatsApp</span>
+                    <span>Book Now on WhatsApp • 10% Off</span>
                 </a>
             </section>
             <section class="steps o">
@@ -202,14 +217,14 @@
                     <p>Edited photos, films and albums delivered as promised in your quote.</p>
                 </div>
             </section>
-            <a class="band" href="https://wa.me/917024883003?text=Hi%20Alex%20Studio!%20Here%20is%20my%20date%20and%20occasion.%20Please%20send%20a%20quote." target="_blank" rel="noopener">
+            <a class="band" href="https://wa.me/917024883003?text=Hi%20Alex%20Studio!%20Here%20is%20my%20date%20and%20occasion.%20Please%20send%20a%20quote." onclick="return gtag_report_conversion('https://wa.me/917024883003?text=Hi%20Alex%20Studio!%20Here%20is%20my%20date%20and%20occasion.%20Please%20send%20a%20quote.');" target="_blank" rel="noopener">
                 <div class="row">
                     <div>
                         <h2>
                             <svg class="wi" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="currentColor">
                                 <use href="#wa"/>
                             </svg>
-                            Book on WhatsApp
+                            Book Now on WhatsApp • 10% Off
                         </h2>
                         <p>Tell us your date and occasion. We reply with a quote.</p>
                     </div>
@@ -240,7 +255,7 @@
                     </div>
                     <div>
                         <b>Book</b>
-                        <a href="https://wa.me/917024883003?text=Hi%20Alex%20Studio!%20I%20want%20to%20book%20a%20shoot." target="_blank" rel="noopener">Book on WhatsApp</a>
+                        <a href="https://wa.me/917024883003?text=Hi%20Alex%20Studio!%20I%20want%20to%20book%20a%20shoot." onclick="return gtag_report_conversion('https://wa.me/917024883003?text=Hi%20Alex%20Studio!%20I%20want%20to%20book%20a%20shoot.');" target="_blank" rel="noopener">Book on WhatsApp</a>
                         <span>10% off your first booking</span>
                     </div>
                     <div>
@@ -261,11 +276,11 @@
             </footer>
         </div>
         <div class="bar">
-            <a class="btn" href="https://wa.me/917024883003?text=Hi%20Alex%20Studio!%20I%20want%20to%20book%20a%20shoot%20(10%25%20off%20first%20booking)." target="_blank" rel="noopener">
+            <a class="btn" href="https://wa.me/917024883003?text=Hi%20Alex%20Studio!%20I%20want%20to%20book%20a%20shoot%20(10%25%20off%20first%20booking)." onclick="return gtag_report_conversion('https://wa.me/917024883003?text=Hi%20Alex%20Studio!%20I%20want%20to%20book%20a%20shoot%20(10%25%20off%20first%20booking).');" target="_blank" rel="noopener">
                 <svg class="wi" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="currentColor">
                     <use href="#wa"/>
                 </svg>
-                <span>Book on WhatsApp</span>
+                <span>Book Now on WhatsApp • 10% Off</span>
             </a>
             <small>10% off your first booking</small>
         </div>
