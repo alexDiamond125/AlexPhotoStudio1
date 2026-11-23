@@ -15,28 +15,26 @@
         <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
 
-        <!-- Google Tag & Ads Conversion Tracking -->
+            <!-- Google Tag & Ads Conversion Tracking -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18589493198"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'AW-18589493198');
-          gtag('config', 'GTM-K6SH5P2F');
 
           function gtag_report_conversion(url) {
-            var callback = function () {
-              if (typeof(url) != 'undefined') {
-                window.open(url, '_blank', 'noopener');
-              }
-            };
             gtag('event', 'conversion', {
-                'send_to': 'AW-18589493198/SvoXCIre0L0GEM7PlKBF',
-                'event_callback': callback
+              'send_to': 'AW-18589493198/SvoXCIre0L0GEM7PlKBF',
+              'transport_type': 'beacon'
             });
-            return false;
+            return true;
           }
         </script>
+
+
+        
+        
 
         <style>
             .trust-strip{margin-top:12px;background:rgba(5,15,22,.92);color:#fff;border-radius:8px;padding:11px 14px;display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:.82rem;font-weight:600;border:1px solid rgba(255,255,255,.1)}
