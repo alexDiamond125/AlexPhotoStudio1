@@ -15,7 +15,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
 
-            <!-- Google Tag & Ads Conversion Tracking -->
+        <!-- Google Tag & Ads Conversion Tracking -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18589493198"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
@@ -26,11 +26,20 @@
           function gtag_report_conversion(url) {
             gtag('event', 'conversion', {
               'send_to': 'AW-18589493198/SvoXCIre0L0GEM7PlKBF',
-              'transport_type': 'beacon'
+              'event_callback': function() {
+                if (url) {
+                  window.location.href = url;
+                }
+              }
             });
-            return true;
+            setTimeout(function() {
+              if (url) {
+                window.location.href = url;
+              }
+            }, 600);
+            return false;
           }
-        </script>
+        </script> 
 
 
         
